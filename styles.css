@@ -9,6 +9,7 @@ body {
     background: url('img/2527292.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
+    
 }
 
 header {
@@ -153,15 +154,7 @@ h2 {
     display: none;
 }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #007BFF;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+
 
 /* Ders Detayları Butonu */
 #back-button {
@@ -237,4 +230,75 @@ a:-webkit-any-link{
     text-decoration: none;
  
 
+}
+footer {
+    background: #0b0c53; /* Koyu mavi arka plan */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    position:relative;
+    border-radius: 100px;
+  
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* İçeriği yatayda ortalar */
+    align-items: center; /* İçeriği dikeyde ortalar */
+    flex-wrap: wrap; /* Küçük ekranlarda alt alta dizilmesini sağlar */
+    width: 80%;
+    margin: auto; /* Sayfa ortasına alır */
+    text-align: center; /* Metinleri ortalar */
+}
+
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ffffff; /* Altın sarısı başlık */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 20px;
+    font-style:oblique;
+}
+
+.footer-info a {
+    color: #7e89ff; /* Altın sarısı link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+  
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social img:hover {
+    transform: scale(1.2);
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
 }
