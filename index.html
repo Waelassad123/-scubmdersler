@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SCÜ Bilgisayar Mühendisliği Dersleri</title>
+    <title>Benim Web Sitem</title>
+<meta name="description" content="SCÜ Bilgisayar Mühendisliği Ders notları, ve tüm ders içerikleri tek bir platformda! Kolay erişim ve güncel bilgiler burada">
+
+    <link rel="icon" href="img/b_muhendisligi.jpg" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/cu.png" alt="Bilgisayar Mühendisliği Logosu" class="logo left-logo">
+            <h1>Bilgisayar Mühendisliği Dersleri</h1>
+            <img src="img/b_muhendisligi.jpg" alt="Bilgisayar Mühendisliği Logosu" class="logo right-logo">
+        </div>
+    </header>
+    <main class="container">
+        <section id="semester-selection">
+            <h2>Sınıf ve Yarıyıl Seçin</h2>
+            <div class="semester-buttons">
+                <div class="semester-column">
+                    <h3 class="semester-header">1. Sınıf</h3>
+                    <button class="semester-button" data-semester="1-guz">Güz</button>
+                    <button class="semester-button" data-semester="1-bahar">Bahar</button>
+                </div>
+                <div class="semester-column">
+                    <h3 class="semester-header">2. Sınıf</h3>
+                    <button class="semester-button" data-semester="2-guz">Güz</button>
+                    <button class="semester-button" data-semester="2-bahar">Bahar</button>
+                </div>
+                <div class="semester-column">
+                    <h3 class="semester-header">3. Sınıf</h3>
+                    <button class="semester-button" data-semester="3-guz">Güz</button>
+                    <button class="semester-button" data-semester="3-bahar">Bahar</button>
+                </div>
+                <div class="semester-column">
+                    <h3 class="semester-header">4. Sınıf</h3>
+                    <button class="semester-button" data-semester="4-guz">Güz</button>
+                    <button class="semester-button" data-semester="4-bahar">Bahar</button>
+                </div>
+            </div>
+        </section>
+        <section id="course-list" class="hidden">
+            <h2 id="selected-semester"></h2>
+            <div class="card-container" id="courses">
+                <!-- Dersler burada listelenecek -->
+            </div>
+        </section>
+        <section id="course-details" class="hidden">
+            <h2>Ders Detayları</h2>
+            <div id="details"></div>
+            <button id="back-button">Geri</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
